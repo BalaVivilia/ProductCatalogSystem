@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog System</title>
+</head>
+<body>
+<h2>Add Product</h2>
+<form action="#" th:action="@{/addProduct}" th:object="${product}" method="post">
+    <p>Name: <input type="text" th:field="*{name}" /></p>
+    <p>Price: <input type="text" th:field="*{price}" /></p>
+    <p>Category: <input type="text" th:field="*{category}" /></p>
+    <p><input type="submit" value="Submit" /></p>
+</form>
+
+</body>
+</html>
